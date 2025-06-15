@@ -1,0 +1,12 @@
+type Query {
+  _empty: String
+}
+
+type Mutation {
+  login(correo: String!, password: String!): AuthPayload
+}
+
+type AuthPayload {
+  token: String
+}
+
